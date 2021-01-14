@@ -1,7 +1,7 @@
 import {Socket} from "socket.io";
 
 const app = require("express")();
-const http = require("https").Server(app);
+const http = require("http").Server(app);
 
 const io = require("socket.io")(http, {
   origin: "https://enc-chat.vercel.app",
